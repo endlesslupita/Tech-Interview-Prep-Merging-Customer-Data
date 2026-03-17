@@ -1,37 +1,40 @@
 from solution import merge_data
 
 def test_normal_case_1():
-        assert merge_data([]) == []
+        assert merge_data([12, 40, 135, 0, 0],[1, 20]) == [1, 12, 20, 40, 135]
 
 def test_normal_case_2():
-        assert merge_data([]) == []
+        assert merge_data([235, 427, 600, 0, 0, 0],[936, 1006, 1845]) == [235, 427, 600, 936, 1006, 1845]
 
 def test_normal_case_3():
-        assert merge_data([]) == []
+        assert merge_data([2, 9, 0],[1]) == [1, 2, 9]
 
 def test_edge_case_1():
-        assert merge_data([]) == []
+#empty lists
+        assert merge_data([],[]) == []
 
 def test_edge_case_2():
-        assert merge_data([]) == []
+# one value in list2
+        assert merge_data([0],[4]) == [4]
 
 def test_edge_case_3():
-        assert merge_data([]) == []
+# duplicate ID from each list
+        assert merge_data([4, 5, 6, 0, 0, 0],[3, 4, 7]) == [3, 4, 4, 5, 6, 7]
 
-def test_normal_case_1_opt():
-        assert merge_data([]) == []
+# def test_normal_case_1_opt():
+#         assert merge_data([],[]) == []
 
-def test_normal_case_2_opt():
-        assert merge_data([]) == []
+# def test_normal_case_2_opt():
+#         assert merge_data([],[]) == []
 
-def test_normal_case_3_opt():
-        assert merge_data([]) == []
+# def test_normal_case_3_opt():
+#         assert merge_data([],[]) == []
 
-def test_edge_case_1_opt():
-        assert merge_data([]) == []
+# def test_edge_case_1_opt():
+#         assert merge_data([],[]) == []
 
-def test_edge_case_2_opt():
-        assert merge_data([]) == []
+# def test_edge_case_2_opt():
+#         assert merge_data([],[]) == []
 
-def test_edge_case_3_opt():
-        assert merge_data([]) == []
+# def test_edge_case_3_opt():
+#         assert merge_data([],[]) == []
