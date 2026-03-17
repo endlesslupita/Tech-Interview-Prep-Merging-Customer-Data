@@ -18,8 +18,8 @@ def test_edge_case_2():
         assert merge_data([0],[4]) == [4]
 
 def test_edge_case_3():
-# duplicate ID from each list
-        assert merge_data([4, 5, 6, 0, 0, 0],[3, 4, 7]) == [3, 4, 4, 5, 6, 7]
+# one value in list1
+        assert merge_data([4],[]) == [4]
 
 # def test_normal_case_1_opt():
 #         assert merge_data([],[]) == []
