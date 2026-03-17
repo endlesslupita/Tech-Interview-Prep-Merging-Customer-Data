@@ -9,4 +9,4 @@ def merge_data(customerData1, customerData2):
     return customerData1
 
 if __name__ == '__main__':
-    print(customerData1)
+    print(merge_data([101,104,107,0,0,0],[102,105,108]))
